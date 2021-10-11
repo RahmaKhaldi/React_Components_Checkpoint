@@ -6,7 +6,20 @@
   height: 40vmin;
   pointer-events: none;
 }
+img {
+  border-radius: 50%;
+}
+a[href^="mailto"]::before {
+  content: "📧 ";
+}
 
+a[href^="tel"]::before {
+  content: "📞 ";
+}
+
+.title{
+color: burlywood;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
